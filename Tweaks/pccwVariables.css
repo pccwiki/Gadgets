@@ -1,0 +1,123 @@
+:root {
+  /* Base units */
+	--border-radius-base: 0.25rem; /* 4px */
+
+  /* Border radius */
+	--border-radius-xs: calc(var(--border-radius-base) / 2); /* 2px */
+	--border-radius-small: var(--border-radius-base); /* 4px */
+	--border-radius-medium: calc(var(--border-radius-base) * 2);  /* 8px */
+	--border-radius-large: calc(var(--border-radius-base) * 3);  /* 12px */
+	--border-radius-xl: calc(var(--border-radius-base) * 3.5);/* 14px */
+	--border-radius-xxl: calc(var(--border-radius-base) * 4);  /* 16px */
+	--border-radius-xxxl: calc(var(--border-radius-base) * 5);  /* 20px */
+	--border-radius-pill:  9999px; --border-radius-circle: 50%;
+
+  /* Border spacing (for inner padding, etc.) */
+	--border-spacing-xs: calc(var(--space-unit) / 2); /* 2px */
+	--border-spacing-base: var(--space-unit);   /* 4px */
+    --border-spacing-small: var(--border-spacing-base);
+	--border-spacing-medium: calc(var(--space-unit) * 2); /* 8px */
+	--border-spacing-large: calc(var(--space-unit) * 3); /* 12px */
+	--border-spacing-xl: calc(var(--space-unit) * 3.5);  /* 14px */
+	--border-spacing-xxl: calc(var(--space-unit) * 4); /* 16px */
+	--border-spacing-xxxl: calc(var(--space-unit) * 5); /* 20px */
+
+--auto: auto;
+--unset: unset;
+
+--center: center;
+--left: left;
+--right: right;
+--middle: middle;
+
+--zero: 0;
+--one: 1;
+--two: 2;
+--three: 3;
+--four: 4;
+--five: 5;
+
+--full-width: 100%;
+--three-quarters-width: 75%;
+--half-width: 50%;
+--quarter-width: 25%;
+    
+	--em-tiny: 0.125em;
+	--em-smallest: 0.25em;
+	--em-smaller:  0.5em;
+	--em-small:    0.75em;
+	--em-base:     1em;
+	--em-large:    1.25em;
+	--em-larger:   1.5em;
+	--em-largest:  1.75em;
+	--em-huge:   2em;
+  
+	--rem-none: var(--space-zero, 0);
+	--rem-tiny: var(--space-xxxs, 0.125rem);
+	--rem-smallest: var(--space-xxs, 0.25rem);
+	--rem-smaller: var(--space-xs, 0.5rem);
+	--rem-small: var(--space-small, 0.75rem);
+	--rem-base: var(--space-base, 1rem);      /* alias fixed */
+	--rem-large: var(--space-large, 1.25rem);
+	--rem-larger: var(--space-xl, 1.5rem);
+	--rem-largest: var(--space-xxl, 1.75rem);
+	--rem-huge: var(--space-xxxl, 2rem);
+
+	--pixels-size-0: 0px;
+	--pixels-size-1: 1px;
+	--pixels-size-2: 2px;
+	--pixels-size-3: 3px;
+	--pixels-size-4: 4px;
+	--pixels-size-5: 5px;
+	--pixels-size-6: 6px;
+	--pixels-size-8: 8px;
+	--pixels-size-10: 10px;
+	--pixels-size-12: 12px;
+	--pixels-size-14: 14px;
+  
+	--padding-tiny: var(--em-tiny);
+	--padding-smallest: var(--em-smallest);
+	--padding-smaller: var(--em-smaller);
+	--padding-small: var(--em-small);
+	--padding-base: var(--em-base);
+	--padding-large: var(--em-large);
+	--padding-larger: var(--em-larger);
+	--padding-largest: var(--em-largest);
+	--padding-huge: var(--em-huge);
+	
+	/* media */
+    --aspect-video: 16 / 9;
+    --aspect-image: 1 / 1;
+  
+	--dimension-xxxs: 16px;
+	--dimension-xxs: 24px;
+	--dimension-xs: 32px;
+	--dimension-small: 48px;
+	--dimension-base: 64px;
+	--dimension-medium: 80px;
+	--dimension-large: 96px;
+	--dimension-xl: 128px;
+	--dimension-xxl: 256px;
+	--dimension-xxxl: 512px;
+	
+  /* grid */
+
+	--grid-gap-small: var(--em-smaller);  /* fixed */
+	--grid-gap: var(--em-base);
+	--grid-gap-large: var(--em-larger);   /* fixed */
+
+	--grid-cols-1: calc(100% - var(--grid-gap));
+	--grid-cols-2: calc(50% - var(--grid-gap));
+	--grid-cols-3: calc(33.333% - var(--grid-gap));
+	--grid-cols-4: calc(25% - var(--grid-gap));
+	--grid-cols-5: calc(20% - var(--grid-gap));
+	
+		/* space token additions and overrides */
+	--space-zero: calc( 0 * var(--space-unit) ); /* new */
+	--space-xxxs: calc( 0.125 * var(--space-unit) ); /* new */
+	--space-small: var( --space-sm ); /* alias */
+	--space-base: var( --space-md ); /* alias */
+	--space-large: var( --space-lg ); /* alias (fixed) */
+	--space-xxl: calc( 1.75 * var(--space-unit) ); /* was 2 */
+	--space-xxxl: calc( 2 * var(--space-unit) );  /* new */
+}
